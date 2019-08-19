@@ -3,17 +3,11 @@ var inquirer = require("inquirer");
 var Table = require("cli-table");
 
 
-// create the connection information for the sql database
+
 var connection = mysql.createConnection({
     host: "localhost",
-  
-    // Your port; if not 3306
     port: 3306,
-  
-    // Your username
     user: "root",
-  
-    // Your password
     password: "@lmost12",
     database: "bamazon"
   });
@@ -31,7 +25,7 @@ var connection = mysql.createConnection({
 	connection.query(query, function(err, res){
 		if(err) throw err;
 		var displayTable = new Table ({
-			head: ["Item ID", "Product Name", "Department", "Price", "Quantity"],
+			head: ["ID", "Product Name", "Department", "Price", "Quantity"],
 			colWidths: [10,25,25,10,14]
 		});
 		for(var i = 0; i < res.length; i++){
@@ -40,14 +34,14 @@ var connection = mysql.createConnection({
 				);
         }
 		console.log(displayTable.toString());
-		buyItem();
+		buyPrompt();
 	});
 }
 
-function buyItem(){
+function buyPrompt(){
 	inquirer.prompt([
 	{
-		name: "id",
+		name: "ID",
 		type: "input",
 		message:"Please enter the ID of the item want to buy:",
 		filter:Number
@@ -61,20 +55,19 @@ function buyItem(){
 
  ]).then(function(answers){
  	var buyAmount = answers.quantity;
- 	var buyID = answers.id;
- 	purchaseOrder(buyID, buyAmount);
+ 	var buyID = answers.ID;
+ 	purchasProducts(buyID, buyAmount);
  })
 
 };
-function purchaseOrder(id, amount){
-	connection.query('Select * FROM products WHERE id =' + id, function(err,res){
+function purchasProducts(ID, prodAmount){
+	connection.query('Select * FROM products WHERE id =' + ID, function(err,res){
 		if(err){console.log(err)};
-		if(amount <= res[0].stock_quantity){
-			var cartPrice = res[0].price * amount;
-			console.log("Good news your order is in stock!");
-			console.log("Your total cost for " + amount + " " +res[0].product_name + " is " + cartPrice + " Thank you!");
-
-			connection.query("UPDATE products SET stock_quantity = stock_quantity - " + amount + "WHERE id = " + id);
+		if(prodAmount <= res[0].stock_quantity){
+			var cartPrice = res[0].price * prodAmount;
+			console.log("Awsome looks like we have more than" + prodAmount + " in stock!!!!");
+			console.log("Your total price for " + prodAmount + " " +res[0].product_name + "'s" + " is " + "$" + cartPrice + ".00" + " Thank you!");
+			connection.query('UPDATE products SET stock_quantity = stock_quantity - ' + prodAmount + ' WHERE id =' + ID);
 		} else{
 			console.log("Insufficient quantity, sorry we do not have enough " + res[0].product_name + "to complete your order.");
 		};

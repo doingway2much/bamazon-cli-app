@@ -62,7 +62,7 @@ function buyPrompt() {
 };
 
 function purchas(ID, prodAmount) {
-    connection.query('Select * FROM products WHERE id =' + ID, function (err, response) {
+    connection.query('SELECT * FROM products WHERE id =' + ID, function (err, response) {
         if (err) { 
             console.log(err) 
         };

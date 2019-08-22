@@ -80,7 +80,7 @@ var showProducts = function () {
 }
 
 var lowInventory = function () {
-    var query = "Select * FROM products WHERE stock_quantity <5;";
+    var query = "Select * FROM products WHERE stock_quantity < 5;"
     connection.query(query, function (err, res) {
         if (err) throw err;
         var productTable = new Table({
@@ -171,30 +171,3 @@ function addProduct() {
               );
             });
           }
-    
-  
-
-
-
-// function addProduct(id, product, department, price, quantity) {
-//     connection.query('SELECT * FROM products WHERE id =' + ID, function (err, response) {
-//         if (err) { 
-//             console.log(err) 
-//         };
-//         if (prodAmount <= response[0].stock_quantity) {
-//             var cartPrice = response[0].price * prodAmount;
-//             console.log("================================================================================================")
-//             console.log("| Awsome looks like we have more than " + prodAmount + " in stock!!!!");
-//             console.log("================================================================================================")
-//             console.log("| Your total price for " + prodAmount + " " + response[0].product_name + "'s" + " is " + "$" + cartPrice + ".00" + " Thank you!");
-//             console.log("================================================================================================")
-//             connection.query('UPDATE products SET stock_quantity = stock_quantity - ' + prodAmount + ' WHERE id =' + ID);
-//         } else {
-//             console.log("================================================================================================")
-
-//             console.log("| Sorry looks like we are running low on " + response[0].product_name + "'s but we do have " + response[0].stock_quantity + " left!!!");
-//             console.log("================================================================================================")
-//         };
-//         showProducts();
-//     });
-// };

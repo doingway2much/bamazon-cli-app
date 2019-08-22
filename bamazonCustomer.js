@@ -20,11 +20,15 @@ connection.connect(function (err) {
 });
 
 
-var displayProducts = function () {
+var showProducts = function () {
     var query = "SELECT * FROM products";
     connection.query(query, function (err, res) {
         if (err) throw err;
         var productTable = new Table({
+            chars: { 'top': '═' , 'top-mid': '╤' , 'top-left': '╔' , 'top-right': '╗'
+         , 'bottom': '═' , 'bottom-mid': '╧' , 'bottom-left': '╚' , 'bottom-right': '╝'
+         , 'left': '║' , 'left-mid': '╟' , 'mid': '─' , 'mid-mid': '┼'
+         , 'right': '║' , 'right-mid': '╢' , 'middle': '│' },
             head: ["ID", "Product Name", "Department", "Price", "Quantity"],
             colWidths: [5, 30, 15, 10, 10]
         });
@@ -80,7 +84,7 @@ function purchas(ID, prodAmount) {
             console.log("| Sorry looks like we are running low on " + response[0].product_name + "'s but we do have " + response[0].stock_quantity + " left!!!");
             console.log("================================================================================================")
         };
-        displayProducts();
+        showProducts();
     });
 };
-displayProducts();
+showProducts();

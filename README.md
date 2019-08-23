@@ -63,14 +63,15 @@ var connection = mysql.createConnection({
 
 # Screen Shots:
 
-bamazonCustomer.js
+bamazonCustomer.js 
+1) (Atomatically displays all data table and gives you the otion to buy products)  
 ![img1](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/BamazonCustomer.JPG)
 
 
 
 bamazonManager.js
 
-1. Main interface (Atomatically displays all data table and gives you the otion to buy products)  
+1. Main interface (Displays menu to choose options from:  
 ![main](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/BamazonManager.JPG?raw=true)
 2. Low Inventory (Displays products that are low in inventory  
 ![low](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/lowInventory.JPG?raw=true)

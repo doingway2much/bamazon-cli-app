@@ -73,13 +73,13 @@ var connection = mysql.createConnection({
 
 1. Main interface
 ![img2](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/BamazonManager.JPG?raw=true)
+![RPG Image](https://github.com/doingway2much/unit-4-game/blob/master/assets/img/RPG.JPG?raw=true)
 2. Low Inventory
 ![img3](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/lowInventory.JPG?raw=true)
-2. 
+2. Add inventory
 ![img4](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/addToInventory.JPG?raw=true)
 4. Add Product
 ![img5](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/addProduct.JPG?raw=true)
-
 
 
 

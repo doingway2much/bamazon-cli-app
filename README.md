@@ -8,7 +8,9 @@ The Bamazon CLI App uses NodeJS and Javascript to create reade and update and de
 
 ```
 
-2.  install NOM pagcaked need to run the app
+2.  Install NPM packeges needed to run the app:
+
+```
 $ git clone https://github.com/doingway2much/bamazon-cli-app.git
 Cloning into 'bamazon-cli-app'...
 remote: Enumerating objects: 26, done.

@@ -2,7 +2,8 @@
 
 The Bamazon CLI App uses NodeJS and Javascript to create reade and update and delete data (C.R.U.D) via a CLI App.  THere are two apps one for the customer's and one for management that do two diffrent things.  
 
-[![DEMO](https://github.com/doingway2much/liri-node-app/blob/master/img/demo.jpg)]https://youtu.be/SdL7LtiWX6wY "Bamazon DEMO")
+[![DEMO](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/DEMO.jpg)]https://youtu.be/SdL7LtiWX6wY "Bamazon DEMO")
+
 # Usage
 
 1.  To use this app you  will first mneed to clone the repo:
@@ -64,8 +65,16 @@ var connection = mysql.createConnection({
 
 
 # bamazonCustomer.js
-
+![img1](https://github.com/doingway2much/liri-node-app/blob/master/img/BamazonCustomer.JPG?raw=true)
 
 
 
 # bamazonManager.js
+![img2](https://github.com/doingway2much/liri-node-app/blob/master/img/BamazonManager.JPG?raw=true)
+![img3](https://github.com/doingway2much/liri-node-app/blob/master/img/lowInventory.JPG?raw=true)
+![img4](https://github.com/doingway2much/liri-node-app/blob/master/img/addToInventory.JPG?raw=true)
+![img5](https://github.com/doingway2much/liri-node-app/blob/master/img/addProduct.JPG?raw=true)
+
+
+
+

@@ -65,7 +65,7 @@ var connection = mysql.createConnection({
 
 
 bamazonCustomer.js
-![img1](https://raw.githubusercontent.com/doingway2much/bamazon-cli-app/master/img/BamazonCustomer.JPG)
+[![img1](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/BamazonCustomer.JPG)]
 
 
 

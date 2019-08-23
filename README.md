@@ -70,17 +70,13 @@ bamazonCustomer.js
 
 bamazonManager.js
 
-1. Main interface (Atomatically displays all data table and gives you the otion to buy products)
-
+1. Main interface (Atomatically displays all data table and gives you the otion to buy products)  
 ![main](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/BamazonManager.JPG?raw=true)
-2. Low Inventory (Displays products that are low in inventory
-
+2. Low Inventory (Displays products that are low in inventory  
 ![low](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/lowInventory.JPG?raw=true)
-2. Add inventory (Adds a quantity of products to the inventory)
-
+2. Add inventory (Adds a quantity of products to the inventory)  
 ![add](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/addToInventory.JPG?raw=true)
-4. Add Product (Adds a new product to the database)
-
+4. Add Product (Adds a new product to the database)  
 ![adds](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/addProduct.JPG?raw=true)
 
 

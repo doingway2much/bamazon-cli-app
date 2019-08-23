@@ -30,9 +30,9 @@ found 0 vulnerabilities
 ```
 
 3.  Use the "bamazon.sql" file to see the data in your MySQL DB:
+***See file for all data***
 
 ```
-***See file for all data***
 DROP DATABASE IF EXISTS bamazon;
 
 CREATE DATABASE bamazon;
@@ -64,12 +64,12 @@ var connection = mysql.createConnection({
 
 
 
-# bamazonCustomer.js
-![img1](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/BamazonCustomer.JPG?raw=true)
+bamazonCustomer.js
+![img1](https://raw.githubusercontent.com/doingway2much/bamazon-cli-app/master/img/BamazonCustomer.JPG)
 
 
 
-# bamazonManager.js
+bamazonManager.js
 
 1. Main interface
 ![main](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/BamazonManager.JPG?raw=true)

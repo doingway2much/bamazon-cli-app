@@ -4,30 +4,12 @@ The Bamazon CLI App uses NodeJS and Javascript to create reade and update and de
 
 [![DEMO](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/DEMO.jpg)](https://youtu.be/SdL7LtiWX6wY "Bamazon DEMO")
 
-bamazonCustomer.js
-![img1](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/BamazonCustomer.JPG)
 
-
-
-bamazonManager.js
-
-1. Main interface
-![main](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/BamazonManager.JPG?raw=true)
-2. Low Inventory
-![low](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/lowInventory.JPG?raw=true)
-2. Add inventory
-![add](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/addToInventory.JPG?raw=true)
-4. Add Product
-![adds](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/addProduct.JPG?raw=true)
 
 
 # Usage
 
 1.  To use this app you  will first mneed to clone the repo:
-
-```
-
-2.  Install NPM packeges needed to run the app:
 
 ```
 $ git clone https://github.com/doingway2much/bamazon-cli-app.git
@@ -79,8 +61,27 @@ var connection = mysql.createConnection({
 });
 ```
 
+# Screen Shots:
+
+bamazonCustomer.js
+![img1](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/BamazonCustomer.JPG)
 
 
+
+bamazonManager.js
+
+1. Main interface (Atomatically displays all data table and gives you the otion to buy products)
+
+![main](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/BamazonManager.JPG?raw=true)
+2. Low Inventory (Displays products that are low in inventory
+
+![low](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/lowInventory.JPG?raw=true)
+2. Add inventory (Adds a quantity of products to the inventory)
+
+![add](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/addToInventory.JPG?raw=true)
+4. Add Product (Adds a new product to the database)
+
+![adds](https://github.com/doingway2much/bamazon-cli-app/blob/master/img/addProduct.JPG?raw=true)
 
 
 

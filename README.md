@@ -2,6 +2,7 @@
 
 The Bamazon CLI App uses NodeJS and Javascript to create reade and update and delete data (C.R.U.D) via a CLI App.  THere are two apps one for the customer's and one for management that do two diffrent things.  
 
+[![DEMO](https://github.com/doingway2much/liri-node-app/blob/master/img/demo.jpg)]https://youtu.be/SdL7LtiWX6wY "Bamazon DEMO")
 # Usage
 
 1.  To use this app you  will first mneed to clone the repo:
